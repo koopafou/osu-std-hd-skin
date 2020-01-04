@@ -1,0 +1,14 @@
+# maybe use -convolve with an horizontal line instead of messing with masks, or use -motion-blur
+-size 128x51 xc:transparent
+-stroke white
+-strokewidth 1
+-draw "line 0,25 127,25"
+( xc:transparent
+  -stroke white
+  -strokewidth 20
+  -draw "line 32,25 96,25"
+  -blur 0x10 )
+-compose multiply
+-composite
+-blur 0
+-write png:-

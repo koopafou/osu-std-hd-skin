@@ -1,0 +1,6 @@
+-size 127x127 xc:transparent
+-fill 'rgba(255,255,255,0.8)'
+-stroke none
+-draw "circle 63,63 10,63"
+-blur 0
+-write png:-

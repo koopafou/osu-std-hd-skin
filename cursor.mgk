@@ -1,0 +1,7 @@
+-size 51x51 xc:transparent
+-fill 'rgba(200,200,200,0.18)'
+-stroke 'rgba(0,0,0,0.2)'
+-strokewidth 1.5
+-draw "circle 25,25 25,7"
+-blur 0
+-write png:-

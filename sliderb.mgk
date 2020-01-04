@@ -1,0 +1,6 @@
+-size 119x119 xc:transparent
+-fill white
+-stroke white
+-draw "circle 59,59 62,62"
+-blur 0x2
+-write png:-

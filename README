@@ -1,0 +1,6 @@
+Requirements :
+
+bash          (...)
+imagemagick   (magick-script)
+bc            (bc)
+gettext       (envsubst)

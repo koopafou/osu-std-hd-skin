@@ -1,0 +1,17 @@
+-size 200x200 xc:transparent
+-fill none
+-stroke white
+-strokewidth 30
+-draw "arc 19,19 180,180 ${ARC_OL},${ARC_OR}"
+-stroke black
+-strokewidth 20
+-draw "arc 19,19 180,180 ${ARC_IL},${ARC_IR}"
+-blur 0x1
+-fill white
+-stroke white
+-strokewidth 0
+-gravity center
+-pointsize 70
+-annotate 0 ${i}
+-blur 0x0.2
+-write png:-

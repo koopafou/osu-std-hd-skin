@@ -1,0 +1,11 @@
+-size 501x501 xc:transparent
+-fill none
+-stroke yellow
+-strokewidth 10
+-draw "circle 250,250 50,250
+       circle 50,250 40,250
+       circle 250,50 250,40
+       circle 450,250 460,250
+       circle 250,450 250,460"
+-blur 0x3
+-write png:-

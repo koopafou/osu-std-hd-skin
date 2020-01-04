@@ -1,0 +1,7 @@
+-size 47x47 xc:transparent
+-fill none
+-stroke orange
+-strokewidth 2.5
+-draw "rectangle 6,6 41,41"
+-blur 0x1.5
+-write png:-
