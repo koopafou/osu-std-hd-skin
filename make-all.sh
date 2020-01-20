@@ -50,7 +50,7 @@ create sliderendcircle
 create sliderstartcircle
 dupe hitcircleoverlay.png sliderstartcircleoverlay.png
 create sliderfollowcircle
-copy sliderscorepoint.png
+create sliderscorepoint
 create sliderb
 
 ####### spinners
@@ -58,11 +58,13 @@ create spinner-bottom
 create spinner-glow
 create spinner-middle
 create spinner-top
+create spinner-spin
+create spinner-clear
 
 ####### default digits
 NDIGITS=10
-ARC_OUTER=$((360 / (2 * $NDIGITS)))
-ARC_INNER=$((360 / (8 * $NDIGITS)))
+ARC_OUTER=$((360 / (4 * $NDIGITS)))
+ARC_INNER=$((360 / (9 * $NDIGITS)))
 export i
 for i in `seq 0 $(($NDIGITS - 1))` ; do
 		ARC_CENTER=$((360 * $i / $NDIGITS))
@@ -74,14 +76,14 @@ for i in `seq 0 $(($NDIGITS - 1))` ; do
 done
 
 ####### hitbursts
-BURSTFRAMES=15
+BURSTFRAMES=12
 HIT100ANGLE=0.8
 create hit0
 create hit50
 angle () {
-		echo "23 + 20 * c($1)" | bc -l
+		echo "23 + 12 * c($1)" | bc -l
 		echo ','
-		echo "23 + 20 * s($1)" | bc -l
+		echo "23 + 12 * s($1)" | bc -l
 }
 export HIT100A=`angle ${HIT100ANGLE}`
 export HIT100B=`angle "${HIT100ANGLE} + 8 * a(1) / 3"`

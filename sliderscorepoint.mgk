@@ -1,0 +1,64 @@
+-size 30x30
+-strokewidth 0
+-fill white
++antialias
+
+xc:rgba(0,0,0,0)
+-draw "translate 14.5,14.5
+       rotate 45
+       translate -14.5,-14.5
+       rectangle 6,6 23,23"
+
+( xc:rgba(0,0,0,0)
+  -draw "rectangle 6,6 23,23" )
+-compose exclusion
+-composite
+-fill none
+-strokewidth 0
+-stroke white
+-draw "rectangle 6,6 23,23"
+-fill white
+-strokewidth 0
+
+( +clone
+
+  ( xc:black
+    -compose difference
+
+    ( xc:black
+      -draw "translate 14.5,14.5
+             rotate 22.5
+             translate -14.5,-14.5
+             rectangle -30,-30 60,14" )
+    -composite
+
+    ( xc:black
+      -draw "translate 14.5,14.5
+             rotate 67.5
+             translate -14.5,-14.5
+             rectangle -30,-30 60,14" )
+    -composite
+
+    ( xc:black
+      -draw "translate 14.5,14.5
+             rotate 112.5
+             translate -14.5,-14.5
+             rectangle -30,-30 60,14" )
+    -composite
+
+    ( xc:black
+      -draw "translate 14.5,14.5
+             rotate 157.5
+             translate -14.5,-14.5
+             rectangle -30,-30 60,14" )
+    -composite )
+
+  -compose src-in
+  -composite )
+
+-compose add
+-composite
+-transparent black
+-blur 0x0.5
+
+-write png:-

@@ -1,7 +1,7 @@
 -size 47x47 xc:transparent
 -fill none
 -stroke cyan
--strokewidth 2.5
--draw "circle 23,23 5,23"
--blur 0x1.5
+-strokewidth 1.5
+-draw "circle 23,23 12,23"
+-blur 0x1
 -write png:-

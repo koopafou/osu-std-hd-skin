@@ -1,10 +1,13 @@
 -size 127x127 xc:transparent
--fill 'rgba(127,127,127,0.1)'
--stroke 'rgba(255,255,255,0.8)'
--strokewidth 2
--draw "circle 63,63 6,63"
 -fill none
--stroke 'rgba(0,0,0,0.8)'
--draw "circle 63,63 4,63"
+-stroke rgba(255,255,255,0.8)
+-strokewidth 1
+-draw "circle 63,63 3,63"
+-fill rgba(127,127,127,0.1)
+-strokewidth 2
+-draw "circle 63,63 20,63"
+-fill none
+-stroke rgba(0,0,0,0.8)
+-draw "circle 63,63 18,63"
 -blur 0x0.5
 -write png:-

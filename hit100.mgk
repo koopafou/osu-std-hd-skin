@@ -1,7 +1,7 @@
 -size 47x47 xc:transparent
 -fill none
 -stroke green1
--strokewidth 2.5
+-strokewidth 1.5
 -draw "polygon ${HIT100A} ${HIT100B} ${HIT100C}"
--blur 0x1.5
+-blur 0x1
 -write png:-
