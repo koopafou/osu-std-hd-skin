@@ -63,8 +63,8 @@ create spinner-clear
 
 ####### default digits
 NDIGITS=10
-ARC_OUTER=$((360 / (4 * $NDIGITS)))
-ARC_INNER=$((360 / (9 * $NDIGITS)))
+ARC_OUTER=$((360 / (5 * $NDIGITS) * 2))
+ARC_INNER=$((360 / (4 * $NDIGITS)))
 export i
 for i in `seq 0 $(($NDIGITS - 1))` ; do
 		ARC_CENTER=$((360 * $i / $NDIGITS))
@@ -81,9 +81,9 @@ HIT100ANGLE=0.8
 create hit0
 create hit50
 angle () {
-		echo "23 + 12 * c($1)" | bc -l
+		echo "23 + 20 * c($1)" | bc -l
 		echo ','
-		echo "23 + 12 * s($1)" | bc -l
+		echo "23 + 20 * s($1)" | bc -l
 }
 export HIT100A=`angle ${HIT100ANGLE}`
 export HIT100B=`angle "${HIT100ANGLE} + 8 * a(1) / 3"`
