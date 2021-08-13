@@ -2,6 +2,13 @@
 # Usage : path-to-this-folder/make-all.sh
 SRCPATH=`dirname "$0"`
 
+if [ -z ${OSU_ALPHA+x} ] ; then
+		export OSU_ALPHA_TRANSFORM=
+else
+		export OSU_ALPHA_TRANSFORM="-channel A +level ${OSU_ALPHA} +channel"
+		# example to make everything 50% more transparent, OSU_ALPHA='0%,50%'
+fi
+
 copy () {
 		if [ . -ef "${SRCPATH}" ] ; then
 				echo "Script in same folder, avoiding operations on $1"
@@ -108,3 +115,8 @@ dupe followpoint-0.png followpoint-1.png
 create followpoint-2
 dupe followpoint-2.png followpoint-3.png
 dupe followpoint-0.png followpoint-4.png
+
+
+###### extras
+create generic-red
+create generic-blue

@@ -8,4 +8,5 @@
        circle 450,250 460,250
        circle 250,450 250,460"
 -blur 0x3
+${OSU_ALPHA_TRANSFORM}
 -write png:-

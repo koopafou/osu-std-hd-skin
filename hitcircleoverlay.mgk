@@ -7,4 +7,5 @@
 -stroke 'rgba(0,0,0,0.8)'
 -draw "circle 63,63 4,63"
 -blur 0x0.5
+${OSU_ALPHA_TRANSFORM}
 -write png:-

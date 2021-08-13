@@ -4,4 +4,5 @@
 -strokewidth 1.5
 -draw "circle 25,25 25,7"
 -blur 0
+${OSU_ALPHA_TRANSFORM}
 -write png:-

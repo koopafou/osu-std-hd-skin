@@ -61,4 +61,5 @@ xc:rgba(0,0,0,0)
 -transparent black
 -blur 0x0.5
 
+${OSU_ALPHA_TRANSFORM}
 -write png:-

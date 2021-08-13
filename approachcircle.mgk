@@ -4,4 +4,5 @@
 -strokewidth 2
 -draw "circle 63,63 5,63"
 -blur 0x0.5
+${OSU_ALPHA_TRANSFORM}
 -write png:-

@@ -3,4 +3,5 @@
 -stroke white
 -draw "circle 59,59 62,63"
 -blur 0x2
+${OSU_ALPHA_TRANSFORM}
 -write png:-

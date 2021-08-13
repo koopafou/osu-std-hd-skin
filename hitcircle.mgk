@@ -3,4 +3,5 @@
 -stroke none
 -draw "circle 63,63 10,63"
 -blur 0
+${OSU_ALPHA_TRANSFORM}
 -write png:-

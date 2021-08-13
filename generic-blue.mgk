@@ -1,0 +1,4 @@
+-size 5x5 xc:transparent
+-fill blue
+-draw "circle 2,2 0,2"
+-write png:-
